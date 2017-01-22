@@ -1,7 +1,7 @@
-var oldUsername;
+var oldElement;
 function checking(username,password)
 {
-	oldUsername = username;
+	oldElement = username;
 	 var table = document.getElementById("PREET");
 	 var val = document.getElementById(username).rowIndex;
 	    table.deleteRow(val);
@@ -16,5 +16,5 @@ function change()
 	var username = document.getElementById("username").value;
 	var password = document.getElementById("password").value;
 	
-	window.location = 'update.jsp?username='+username+'&password='+password+'&oldUsername='+oldUsername;
+	window.location = 'update.jsp?username='+username+'&password='+password+'&oldUsername='+oldElement;
 }
